@@ -80,3 +80,14 @@ Answer/Output:
 'Frédérique Citeaux', '11'
 'Laurence Lebihan', '17'
 'Elizabeth Lincoln', '14'
+
+## Query 7: Show each customers contact name and also create a new column that displays only the first 4 letters of their contact name.
+# ContactName, short_name
+'Maria Anders', 'Mari'
+'Ana Trujillo', 'Ana '
+'Antonio Moreno', 'Anto'
+'Thomas Hardy', 'Thom'
+'Christina Berglund', 'Chri'
+'Hanna Moos', 'Hann'
+'Frédérique Citeaux', 'Fréd'
+'Martín Sommer', 'Mart'
