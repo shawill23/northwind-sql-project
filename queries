@@ -39,3 +39,9 @@ ON customers.CustomerID = orders.CustomerID
 GROUP BY orders.CustomerID
 HAVING COUNT(orders.CustomerID) > 5
 LIMIT 8; 
+
+## Query 7: Show each customers contact name and also create a new column that displays only the first 4 letters 
+   of their contact name. 
+SELECT ContactName, SUBSTRING(ContactName, 1, 4) AS short_name
+FROM customers
+LIMIT 8; 
