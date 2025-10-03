@@ -1,6 +1,6 @@
 
 ## Query 1: Show customer name and total number of orders, ordered from highest to lowest. Limit list to ten. 
-Answer/Output:
+Query results:
 # ContactName, total_orders
 'Jose Pavarotti', '31'
 'Roland Mendel', '30'
@@ -15,7 +15,7 @@ Answer/Output:
 
 
 ## Query 2: Show the product name and total sales. Limit list to five. 
-Answer/Output:
+Query results:
 # ProductName, total_sales
 'Chai', '180'
 'Chang', '456'
@@ -24,7 +24,7 @@ Answer/Output:
 'Chef Anton\'s Gumbo Mix', '768.6'
 
 ## Query 3: Find the average unit price of all products. Limit list to ten. 
-Answer/Output: 
+Query results:
 # ProductName, product_price
 'Alice Mutton', '780'
 'Aniseed Syrup', '120'
@@ -41,7 +41,7 @@ Answer/Output:
 
 ## Query 4: Show each product with a label that classifies it as 'Low Stock' if
 the units in stock are under 20, and 'In Stock' otherwise. Limit list to eight.
-Answer/Output:
+Query results:
 # ProductName, Product_In_Stock
 'Chai', 'In Stock'
 'Chang', 'Low Stock'
@@ -55,7 +55,7 @@ Answer/Output:
 
 
 ## Query 5: Show each employee alongside the EmployeeID (and/or) Title of the person they report to.
-Answer/Output: 
+Query results:
 # EmployeeID, FirstName, LastName, Title, ReportsTo
 '1', 'Nancy', 'Davolio', 'Sales Representative', '2'
 '3', 'Janet', 'Leverling', 'Sales Representative', '2'
@@ -74,7 +74,7 @@ This shows the reporting structure based on the available schema.
 
 
 ## Query 6: Show the customers who have placed more than five orders.
-Answer/Output: 
+Query results:
 # ContactName, orders_placed
 'Maria Anders', '6'
 'Antonio Moreno', '7'
@@ -86,6 +86,7 @@ Answer/Output:
 'Elizabeth Lincoln', '14'
 
 ## Query 7: Show each customers contact name and also create a new column that displays only the first four letters of their contact name.
+Query results:
 # ContactName, short_name
 'Maria Anders', 'Mari'
 'Ana Trujillo', 'Ana '
