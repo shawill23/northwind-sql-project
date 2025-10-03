@@ -19,7 +19,7 @@ FROM products
 GROUP BY ProductName; 
 
 ## Query 4: Show each product with a label that classifies it as 'Low Stock' if
-the units in stock are under 20, and 'In Stock' otherwise. Limit list to eight.
+the units in stock are under 20, and 'In Stock' otherwise. Limit list to 8.
 SELECT ProductName, 
 CASE WHEN UnitsInStock < 20 THEN 'Low Stock'
 ELSE 'In Stock' 
@@ -32,7 +32,7 @@ SELECT employees.EmployeeID, employees.FirstName, employees.LastName, employees.
 FROM employees
 WHERE ReportsTo IS NOT NULL;
 
-## Query 6: Show the customers who have placed more than five orders. Limit list to eight. 
+## Query 6: Show the customers who have placed more than five orders. Limit list to 8. 
 SELECT ContactName, COUNT(orders.OrderID) AS orders_placed
 FROM customers
 JOIN orders
