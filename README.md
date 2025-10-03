@@ -27,26 +27,13 @@ The goal of this project was to:
 
 ---
 
-##  Example Questions Answered 
-1. How many orders has each customer placed? Show customer names, ordered from highest to lowest.
-2. Which products generate the highest sales (Top 5)?
+## Questions Answered 
+1. How many orders has each customer placed? (Show customer name and total number of orders, ordered from highest to lowest. Limit list to 10.)
+2. Which products generate the highest sales? (List top 5 products)
 3. What is the average unit price of products? 
-4. What is the stock status of each product?
-5. Which employees report to whom?
-6. Which customers have placed more than five orders?
-7. What are the short names (first four letters) of each customer's contact name?
+4. Which products are classified as Low Stock (units in stock under 20) and which are In Stock?
+5. Which employee reports to which manager? (Show each employee alongside the ID/title of their manager)
+6. Which customers have placed more than 5 orders?
+7. What are the first four letters of each customer's contact name?
 
----
-
-##  How to Run 
-1. Clone this repository. 
-2. Import the **Northwind database** into MySQL. 
-3. Run queries from the `northwind queries` file. 
-4. Compare results with the outputs in `answers`. 
-
----
-
-## 📖 Next Steps 
-- Expand queries with subqueries and window functions. 
-- Build a visualization layer (Power BI or Tableau) on top of Northwind data.
-- 
+ 
