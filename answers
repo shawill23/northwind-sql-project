@@ -1,5 +1,5 @@
 
-## Query 1: How many orders has each customer placed? Show customer name and total number of orders, ordered from highest to lowest. Limit list to 10.
+## Query 1: Show customer name and total number of orders, ordered from highest to lowest. Limit list to ten. 
 Answer/Output:
 # ContactName, total_orders
 'Jose Pavarotti', '31'
@@ -14,7 +14,7 @@ Answer/Output:
 'Renate Messner', '15'
 
 
-## Query 2: Show the product name and total sales. 
+## Query 2: Show the product name and total sales. Limit list to five. 
 Answer/Output:
 # ProductName, total_sales
 'Chai', '180'
@@ -23,7 +23,7 @@ Answer/Output:
 'Chef Anton\'s Cajun Seasoning', '1056'
 'Chef Anton\'s Gumbo Mix', '768.6'
 
-## Query 3: Find the average unit price of all products. Limit list to 10. 
+## Query 3: Find the average unit price of all products. Limit list to ten. 
 Answer/Output: 
 # ProductName, product_price
 'Alice Mutton', '780'
@@ -39,7 +39,7 @@ Answer/Output:
 
 
 
-## Query 4: Create a query that shows each product along with a label that classifies it as low stock if the units in stock are under 20, and in stock otherwise. Limit list to 8.
+## Query 4: Show each product along with a label that classifies it as low stock if the units in stock are under 20, and in stock otherwise. Limit list to eight.
 Answer/Output:
 # ProductName, Product_In_Stock
 'Chai', 'In Stock'
@@ -66,10 +66,13 @@ Answer/Output:
 '9', 'Anne', 'Dodsworth', 'Sales Representative', '5'
 
 Project Note:
-The Northwind schema only contains ReportsTo as an employee ID, and Title for role descriptions. It does not include manager names directly. A self-join could normally return the managers name, but in this dataset the output doesnt display correctly. Instead, this query lists employees with the ID's or titles they report to. This shows the reporting structure based on the available schema. 
+The Northwind schema only contains ReportsTo as an employee ID, and Title for role descriptions.
+It does not include manager names directly. A self-join could normally return the managers name, but in this 
+dataset the output doesnt display correctly. Instead, this query lists employees with the ID's or titles they report to.
+This shows the reporting structure based on the available schema. 
 
 
-## Query 6: Show the customers who have placed more than 5 orders.
+## Query 6: Show the customers who have placed more than five orders.
 Answer/Output: 
 # ContactName, orders_placed
 'Maria Anders', '6'
@@ -81,7 +84,7 @@ Answer/Output:
 'Laurence Lebihan', '17'
 'Elizabeth Lincoln', '14'
 
-## Query 7: Show each customers contact name and also create a new column that displays only the first 4 letters of their contact name.
+## Query 7: Show each customers contact name and also create a new column that displays only the first four letters of their contact name.
 # ContactName, short_name
 'Maria Anders', 'Mari'
 'Ana Trujillo', 'Ana '
