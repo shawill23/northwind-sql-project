@@ -13,7 +13,7 @@ Query Results:
 'Renate Messner', '15'
 
 
-## Query 2: Show the product name and total sales. Limit list to 5.
+## Query 2: Show the product name and total sales. Limit list to 5. Limit list to 8.
 Query Results: 
 # ProductName, total_sales
 'Chai', '180'
