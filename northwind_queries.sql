@@ -9,7 +9,8 @@ LIMIT 10;
 ## Query 2: Show the product name and total sales. Limit list to five.
 SELECT ProductName, SUM(UnitPrice * QuantityPerUnit) AS total_sales
 FROM products
-GROUP BY ProductID; 
+GROUP BY ProductID
+LIMIT 5; 
 
 
 ## Query 3: Find the average unit price of all products.
