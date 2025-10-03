@@ -38,7 +38,7 @@ Query Results:
 
 
 ## Query 4: Create a query that shows each product along with a label that 
-classifies it as low stock if the units in stock are under 20, and in stock otherwise. Limit list to 8.
+# classifies it as low stock if the units in stock are under 20, and in stock otherwise. Limit list to 8.
 Query Results:
 # ProductName, Product_In_Stock
 'Chai', 'In Stock'
