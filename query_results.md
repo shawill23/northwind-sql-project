@@ -1,6 +1,6 @@
 ## Query 1: Show customer name and total number of orders. Order from highest to lowest. Limit list to 10.
 Query Results:
-# ContactName, total_orders
+ # ContactName, total_orders
 'Jose Pavarotti', '31'
 'Roland Mendel', '30'
 'Horst Kloss', '28'
