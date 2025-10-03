@@ -1,8 +1,0 @@
-## Query 1: Top Customers by Orders
-'''sql 
-SELECT customers.ContactName, COUNT(orders.OrderID) AS total_orders
-FROM customers
-JOIN orders ON customers.CustomerID = orders.CustomerID 
-GROUP BY customers.CustomerID
-ORDER BY total_orders DESC
-LIMIT 5; 
