@@ -13,7 +13,7 @@ GROUP BY ProductID
 LIMIT 5; 
 
 
-## Query 3: Find the average unit price of all products.
+## Query 3: Find the average unit price of all products. Limit list to 10.
 SELECT ProductName, AVG(UnitPrice * QuantityPerUnit) AS product_price
 FROM products
 GROUP BY ProductName; 
