@@ -1,4 +1,4 @@
-## Query 1: Show customer name and total number of orders. Order from highest to lowest.
+## Query 1: Show customer name and total number of orders. Order from highest to lowest. Limit list to 10.
 SELECT customers.ContactName, COUNT(orders.OrderID) AS total_orders
 FROM customers 
 JOIN orders ON customers.CustomerID = orders.CustomerID
