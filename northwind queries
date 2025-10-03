@@ -17,7 +17,8 @@ SELECT ProductName, AVG(UnitPrice * QuantityPerUnit) AS product_price
 FROM products
 GROUP BY ProductName; 
 
-## Query 4: Classify products as 'Low Stock' or 'In Stock'. Limit list to eight.
+## Query 4: Show each product along with a label that classifies it as low stock if
+the units in stock are under 20, and in stock otherwise. Limit list to eight.
 SELECT ProductName, 
 CASE WHEN UnitsInStock < 20 THEN 'Low Stock'
 ELSE 'In Stock' 
