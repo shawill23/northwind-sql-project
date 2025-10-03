@@ -1,5 +1,5 @@
-## Query 1: How many orders has each customer placed? Show customer name and total number of orders, ordered from highest to lowest. Limit list to 10.
-Answer/Output:
+## Query 1: Show customer name and total number of orders. Order from highest to lowest. Limit list to 10.
+Query Results:
 # ContactName, total_orders
 'Jose Pavarotti', '31'
 'Roland Mendel', '30'
@@ -13,8 +13,8 @@ Answer/Output:
 'Renate Messner', '15'
 
 
-## Query 2: Show the product name and total sales. 
-Answer/Output:
+## Query 2: Show the product name and total sales. Limit list to 5.
+Query Results: 
 # ProductName, total_sales
 'Chai', '180'
 'Chang', '456'
@@ -23,7 +23,7 @@ Answer/Output:
 'Chef Anton\'s Gumbo Mix', '768.6'
 
 ## Query 3: Find the average unit price of all products. Limit list to 10. 
-Answer/Output: 
+Query Results: 
 # ProductName, product_price
 'Alice Mutton', '780'
 'Aniseed Syrup', '120'
@@ -37,9 +37,8 @@ Answer/Output:
 'Chef Anton\'s Gumbo Mix', '768.6'
 
 
-
 ## Query 4: Create a query that shows each product along with a label that classifies it as low stock if the units in stock are under 20, and in stock otherwise. Limit list to 8.
-Answer/Output:
+Query Results:
 # ProductName, Product_In_Stock
 'Chai', 'In Stock'
 'Chang', 'Low Stock'
@@ -51,9 +50,8 @@ Answer/Output:
 'Northwoods Cranberry Sauce', 'Low Stock'
 
 
-
 ## Query 5: Show each employee alongside the EmployeeID (and/or) Title of the person they report to.
-Answer/Output: 
+Query Results: 
 # EmployeeID, FirstName, LastName, Title, ReportsTo
 '1', 'Nancy', 'Davolio', 'Sales Representative', '2'
 '3', 'Janet', 'Leverling', 'Sales Representative', '2'
@@ -68,8 +66,8 @@ Project Note:
 The Northwind schema only contains ReportsTo as an employee ID, and Title for role descriptions. It does not include manager names directly. A self-join could normally return the managers name, but in this dataset the output doesnt display correctly. Instead, this query lists employees with the ID's or titles they report to. This shows the reporting structure based on the available schema. 
 
 
-## Query 6: Show the customers who have placed more than 5 orders.
-Answer/Output: 
+## Query 6: Show customers who have placed more than 5 orders.
+Query Results: 
 # ContactName, orders_placed
 'Maria Anders', '6'
 'Antonio Moreno', '7'
@@ -79,4 +77,15 @@ Answer/Output:
 'Frédérique Citeaux', '11'
 'Laurence Lebihan', '17'
 'Elizabeth Lincoln', '14'
+
+## Query 7: Show each customer's contact name and create a new column displaying the first 4 letters of their contact name.
+Query Results:
+# ContactName, short_name
+'Ana Trujillo', 'Ana '
+'Antonio Moreno', 'Anto'
+'Thomas Hardy', 'Thom'
+'Christina Berglund', 'Chri'
+'Hanna Moos', 'Hann'
+'Frédérique Citeaux', 'Fréd'
+'Martín Sommer', 'Mart'
 
