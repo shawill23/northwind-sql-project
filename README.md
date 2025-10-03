@@ -12,8 +12,8 @@ The goal of this project was to:
 ---
 
 ## Files in this Repository 
-- **northwind queries** → All SQL queries used for the project. 
-- **answers** → Output examples/results for the queries. 
+- **queries** → All SQL queries used for the project. 
+- **query results** → Output examples/results for the queries. 
 
 ---
 
