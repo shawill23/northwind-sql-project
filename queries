@@ -1,0 +1,47 @@
+## Query 1: Show customer name and total number of orders. Order from highest to lowest.
+SELECT customers.ContactName, COUNT(orders.OrderID) AS total_orders
+FROM customers 
+JOIN orders ON customers.CustomerID = orders.CustomerID
+GROUP BY customers.ContactName
+ORDER BY total_orders DESC
+LIMIT 10; 
+
+## Query 2: Show the product name and total sales. Limit list to five.
+SELECT ProductName, SUM(UnitPrice * QuantityPerUnit) AS total_sales
+FROM products
+GROUP BY ProductID; 
+
+
+## Query 3: Find the average unit price of all products.
+SELECT ProductName, AVG(UnitPrice * QuantityPerUnit) AS product_price
+FROM products
+GROUP BY ProductName; 
+
+## Query 4: Show each product with a label that classifies it as 'Low Stock' if
+the units in stock are under 20, and 'In Stock' otherwise. Limit list to eight.
+SELECT ProductName, 
+CASE WHEN UnitsInStock < 20 THEN 'Low Stock'
+ELSE 'In Stock' 
+END AS Product_In_Stock
+FROM products
+LIMIT 8; 
+
+## Query 5: Show each employee alongside the EmployeeID (and/or) title of the person they report to.
+SELECT employees.EmployeeID, employees.FirstName, employees.LastName, employees.Title, employees.ReportsTo
+FROM employees
+WHERE ReportsTo IS NOT NULL;
+
+## Query 6: Show the customers who have placed more than five orders. Limit list to eight. 
+SELECT ContactName, COUNT(orders.OrderID) AS orders_placed
+FROM customers
+JOIN orders
+ON customers.CustomerID = orders.CustomerID 
+GROUP BY orders.CustomerID
+HAVING COUNT(orders.CustomerID) > 5
+LIMIT 8; 
+
+## Query 7: Show each customers contact name and also create a new column that displays only the first fou letters of their contact name.
+Limit list to eight.
+SELECT ContactName, SUBSTRING(ContactName, 1, 4) AS short_name
+FROM customers
+LIMIT 8; 
