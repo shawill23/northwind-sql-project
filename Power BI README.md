@@ -29,14 +29,19 @@ Its designed to showcase essential analytics skills - data modeling, DAX calcula
 - **Regions with Highest Sales** - Europe and North America
 
 ## Visuals Included 
-- KPI card (for global revenue)
-- Bar chart (Top 10 products by revenue)
-- Line Chart (Total sales trend by year)
-- Map visual (Sales by region and category)
-- Slciers (for date and category filtering)
+
+<h3>Sales Overview Page</h3>
+<img src="https://github.com/shawill23/northwind-sql-project/blob/main/northwind%20sales%20overview%20screenshot%20.png?raw=true" width="400">
+
+<h3>Product Performance</h3>
+<img src="https://github.com/shawill23/northwind-sql-project/blob/main/Screenshot%202025-10-17%20144809.png?raw=true" width="400">
+
+<h3>Regional Performance</h3>
+<img src="https://github.com/shawill23/northwind-sql-project/blob/main/Screenshot%202025-10-17%20144910.png?raw=true" width="400">
+
 
 ## Data Model Summary 
-- **northwind_orders** (cntains OrderDate, CustomerID, ShipCountry)
+- **northwind_orders** (contains OrderDate, CustomerID, ShipCountry)
 - **northwind_order_details** (links OrderID <-> OrderID, includes UnitPrice and Quantity)
 - **northwind_products** (connects via ProductID to Categories)
 - **northwind_categories** (provides CategoryName used in slicers and maps)
