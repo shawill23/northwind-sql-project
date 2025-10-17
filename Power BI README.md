@@ -1,4 +1,5 @@
 ## Northwind Sales Analysis Dashboard (Power BI)
+Download Power BI File (.pbix)(https://github.com/shawill23/northwind-sql-project/blob/main/northwind%20sales%20project.pbix)
 
 ## About the Project
 This project analyzes the northwind traders dataset to uncover insights on global sales performance, product trends, and regional revenue distribution. The dashboard is designed to demonstate end-to-end data analytics skills - from SQL querying and data modeling to Power BI visualization and storytelling. 
