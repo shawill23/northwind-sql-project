@@ -31,13 +31,13 @@ Its designed to showcase essential analytics skills - data modeling, DAX calcula
 ## Visuals Included 
 
 <h3>Sales Overview Page</h3>
-<img src="https://github.com/shawill23/northwind-sql-project/blob/main/northwind%20sales%20overview%20screenshot%20.png?raw=true" width="400">
+<img src="https://github.com/shawill23/northwind-sql-project/blob/main/northwind%20sales%20overview%20screenshot%20.png?raw=true" width="550">
 
 <h3>Product Performance</h3>
-<img src="https://github.com/shawill23/northwind-sql-project/blob/main/Screenshot%202025-10-17%20144809.png?raw=true" width="400">
+<img src="https://github.com/shawill23/northwind-sql-project/blob/main/Screenshot%202025-10-17%20144809.png?raw=true" width="550">
 
 <h3>Regional Performance</h3>
-<img src="https://github.com/shawill23/northwind-sql-project/blob/main/Screenshot%202025-10-17%20144910.png?raw=true" width="400">
+<img src="https://github.com/shawill23/northwind-sql-project/blob/main/Screenshot%202025-10-17%20144910.png?raw=true" width="550">
 
 
 ## Data Model Summary 
